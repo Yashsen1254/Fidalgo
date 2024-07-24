@@ -1,6 +1,7 @@
 <?php
     require '../includes/init.php';
     include pathOf('includes/header.php');
+	include pathOf('includes/navbar.php');
 ?>
 <body class="page-template page-template-page-full-width page-template-page-full-width-php page page-id-4861 theme-fidalgo qi-blocks-1.2.6 qodef-gutenberg--no-touch qode-framework-1.2.2 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.6.9 qi-watermark-1.4.9 qodef-back-to-top--enabled qodef-skin--midnight-blue  qodef-content-behind-header qodef-header--minimal-centered qodef-header-appearance--sticky qodef-content--behind-header qodef-mobile-header--minimal qodef-drop-down-second--full-width qodef-drop-down-second--default fidalgo-core-1.0 fidalgo-1.0 qodef-content-grid-1400 qodef-search--fullscreen elementor-default elementor-kit-4 elementor-page elementor-page-4861" itemscope itemtype="https://schema.org/WebPage">
 
@@ -13,56 +14,6 @@
 <div class="widget widget_block" data-area="header-top-right-1"><a style="font-size:16px;" href="tel:1234567899">123 456 7899</a></div><div class="widget widget_fidalgo_core_single_image" data-area="header-top-right-1"><div class="qodef-shortcode qodef-m  qodef-single-image qodef-layout--default  qodef--retina    qodef--has-appear"> <div class="qodef-m-image"> <img itemprop="image" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/10/landing-icon-footer.png" width="8" height="14" alt /> </div> </div></div><div class="widget widget_block" data-area="header-top-right-1"><a style="font-size:16px;" href="https://www.google.com/maps/place/R.+Guarda-Mor+37,+1200-813+Lisboa,+Portugal/@38.7072458,-9.1605101,17z/data=!3m1!4b1!4m6!3m5!1s0xd19349ca2e5e13f:0x34a9a08f8ef8a661!8m2!3d38.7072416!4d-9.1579352!16s%2Fg%2F11c5jwkcdh?entry=ttu" target="_blank" rel="noopener">37 Rua do Guarda-Mor Lisbonn 90291</a></div> </div>
 </div>
 </div>
-<header id="qodef-page-header" role="banner">
-<div id="qodef-page-header-inner" class>
-<div class="qodef-minimal-centered-header-left-wrapper">
-<a href="javascript:void(0)" class="qodef-opener-icon qodef-m qodef-source--predefined qodef-fullscreen-menu-opener">
-<span class="qodef-m-icon qodef--open">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-<span class="qodef-m-icon qodef--close">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-</a>
-<div class="qodef-widget-holder qodef--two">
-</div>
-</div>
-<a itemprop="url" class="qodef-header-logo-link qodef-height--set qodef-source--image" href="https://fidalgo.qodeinteractive.com/" rel="home">
-<img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /><img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--dark" alt="logo dark" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /><img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--light" alt="logo light" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /></a>
-<div class="qodef-minimal-centered-header-right-wrapper">
-<div class="qodef-widget-holder qodef--one">
-<div id="fidalgo_core_button-3" class="widget widget_fidalgo_core_button qodef-header-widget-area-one" data-area="header-widget-one"><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--outlined  qodef-html--link" href="https://fidalgo.qodeinteractive.com/book-a-table/" target="_self"> <span class="qodef-m-text">Book a table</span></a></div> </div>
-</div>
-</div>
-<div class="qodef-header-sticky qodef-appearance--up">
-<div class="qodef-header-sticky-inner">
-<div class="qodef-minimal-centered-header-left-wrapper">
-<a href="javascript:void(0)" class="qodef-opener-icon qodef-m qodef-source--predefined qodef-fullscreen-menu-opener">
-<span class="qodef-m-icon qodef--open">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-<span class="qodef-m-icon qodef--close">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-</a>
-</div>
-<a itemprop="url" class="qodef-header-logo-link qodef-height--set qodef-source--image" href="https://fidalgo.qodeinteractive.com/" rel="home">
-<img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /></a>
-<div class="qodef-minimal-centered-header-right-wrapper">
-<div class="qodef-widget-holder qodef--one">
-<div id="fidalgo_core_button-4" class="widget widget_fidalgo_core_button qodef-sticky-right"><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--outlined  qodef-html--link" href="https://fidalgo.qodeinteractive.com/book-a-table/" target="_self"> <span class="qodef-m-text">book a table</span></a></div> </div>
-</div>
-</div>
-</div>
-</header>
-<header id="qodef-page-mobile-header" role="banner">
-<div id="qodef-page-mobile-header-inner" class>
-<a itemprop="url" class="qodef-mobile-header-logo-link qodef-height--set qodef-source--image" href="https://fidalgo.qodeinteractive.com/" rel="home">
-<img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /><img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--dark" alt="logo dark" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /><img width="363" height="96" src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png" class="qodef-header-logo-image qodef--light" alt="logo light" itemprop="image" srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo.png 363w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/h3-logo-300x79.png 300w" sizes="(max-width: 363px) 100vw, 363px" /></a>
-<a href="javascript:void(0)" class="qodef-opener-icon qodef-m qodef-source--predefined qodef-fullscreen-menu-opener">
-<span class="qodef-m-icon qodef--open">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-<span class="qodef-m-icon qodef--close">
-<span class="qodef-m-lines"><span class="qodef-m-line qodef--1"></span><span class="qodef-m-line qodef--2"></span><span class="qodef-m-line qodef--3"></span><span class="qodef-m-line qodef--4"></span></span> </span>
-</a>
-</div>
-</header>
 <div id="qodef-page-outer">
 <div id="qodef-page-inner" class="qodef-content-full-width">
 <main id="qodef-page-content" class="qodef-grid qodef-layout--template qodef-grid-template--12 " role="main">
