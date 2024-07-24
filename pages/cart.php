@@ -5,8 +5,6 @@
 <body class="page-template-default page page-id-9 theme-fidalgo qi-blocks-1.2.6 qodef-gutenberg--no-touch qode-framework-1.2.2 woocommerce-cart woocommerce-page woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.6.9 qi-watermark-1.4.9 qodef-back-to-top--enabled qodef-skin--reseda-green  qodef-header--standard qodef-header-appearance--none qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--default fidalgo-core-1.0 fidalgo-1.0 qodef-content-grid-1400 qodef-header-standard--center qodef-search--fullscreen elementor-default elementor-kit-4" itemscope itemtype="https://schema.org/WebPage">
 
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLJLSX7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
-<a class="skip-link screen-reader-text" href="#qodef-page-content">Skip to the content</a> <div id="qodef-page-wrapper" class>
 <header id="qodef-page-header" role="banner">
 <div id="qodef-page-header-inner" class>
 <div class="qodef-header-wrapper">
