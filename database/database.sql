@@ -48,7 +48,7 @@ CREATE TABLE Orders (
 
 -- Table for order details
 CREATE TABLE OrderDetails (
-    `OrderDetailsId` INT AUTO_INCREMENT PRIMARY KEY,
+    `OrderDetailId` INT AUTO_INCREMENT PRIMARY KEY,
     `OrderId` INT NOT NULL,
     `ProductId` INT NOT NULL,
     `Quantity` INT NOT NULL,
@@ -59,10 +59,19 @@ CREATE TABLE OrderDetails (
 
 -- Table for coupons
 CREATE TABLE Coupons (
-    `CouponsId` INT AUTO_INCREMENT PRIMARY KEY,
+    `CouponId` INT AUTO_INCREMENT PRIMARY KEY,
     `Code` VARCHAR(255) NOT NULL UNIQUE,
     `Discount` INT NOT NULL,
     `Expires` TIMESTAMP
+);
+
+-- Table for wishlist
+CREATE TABLE Wishlist (
+    `WishlistId` INT AUTO_INCREMENT PRIMARY KEY,
+    `UserId` INT NOT NULL,
+    `ProductId` INT NOT NULL,
+    FOREIGN KEY (UserId) REFERENCES Users(UserId),
+    FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
 );
 
 -- Table for cart
@@ -73,16 +82,6 @@ CREATE TABLE Cart (
     `Quantity` INT NOT NULL,
     FOREIGN KEY (UserId) REFERENCES Users(UserId),
     FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
-);
-
--- Table for payments
-CREATE TABLE Payments (
-    `PaymentId` INT AUTO_INCREMENT PRIMARY KEY,
-    `OrderId` INT NOT NULL,
-    `Amount` INT NOT NULL,
-    `Method` VARCHAR(255) NOT NULL,
-    `Status` VARCHAR(255) NOT NULL,
-    FOREIGN KEY (OrderId) REFERENCES orders(OrderId)
 );
 
 -- Table for feedbacks
