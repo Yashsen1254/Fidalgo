@@ -1,11 +1,11 @@
 <?php
 
-define("BASE_DIR", $_SERVER['DOCUMENT_ROOT'] . "/demo");
-define("BASE_URL", "/demo");
+define("BASE_DIR", $_SERVER['DOCUMENT_ROOT'] . "/fidalgo");
+define("BASE_URL", "/fidalgo");
 
 date_default_timezone_set('Asia/Kolkata');
 
-$connection = new PDO("mysql:host=localhost;port=3306;dbname=FreshFusion", "root", "");
+$connection = new PDO("mysql:host=localhost;port=3306;dbname=fidalgo", "root", "");
 
 function pathOf($path)
 {
