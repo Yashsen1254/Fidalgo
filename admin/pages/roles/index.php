@@ -58,11 +58,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-footer">
-                    <a href="tables.html" class="page-footer-item page-footer-item-left"><i data-feather="arrow-left" class="footer-left"></i>Basic Tables</a>
-                    <a href="charts.html" class="page-footer-item page-footer-item-right">Charts<i data-feather="arrow-right" class="footer-right"></i></a>
-                </div>
-
                 </div>
         </div>
 <?php
