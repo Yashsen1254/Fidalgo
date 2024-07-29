@@ -37,6 +37,14 @@ CREATE TABLE Products (
     FOREIGN KEY (CategoryId) REFERENCES Categories(CategoryId)
 );
 
+-- Table for booking
+CREATE TABLE Booking (
+    `BookingId` INT AUTO_INCREMENT PRIMARY KEY,
+    `TotalPerson` INT NOT NULL,
+    `Date` DATE NOT NULL,
+    `Time` TIME NOT NULL
+);
+
 -- Table for orders
 CREATE TABLE Orders (
     `OrderId` INT AUTO_INCREMENT PRIMARY KEY,
@@ -87,10 +95,7 @@ CREATE TABLE Cart (
 -- Table for feedbacks
 CREATE TABLE Feedbacks (
     `FeedbackId` INT AUTO_INCREMENT PRIMARY KEY,
-    `UserId` INT NOT NULL,
-    `ProductId` INT NOT NULL,
+    `Name` INT NOT NULL,
     `Rating` INT NOT NULL,
-    `Comment` VARCHAR(255),
-    FOREIGN KEY (UserId) REFERENCES Users(UserId),
-    FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
+    `Comment` VARCHAR(255) NOT NULL,
 );
