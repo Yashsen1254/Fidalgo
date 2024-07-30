@@ -24,14 +24,14 @@
                           <p class="card-text"><?= $product['Description'] ?></p>
                           <p class="card-text"><?= $product['Price'] ?></p>
                           <div class="d-flex justify-content-between align-items-center mt-4">
-                            <form action="./update" method="post">
-                                <input type="hidden" name="Id" id="Id" value="<?= $product['ProductId'] ?>">
+                            <form action="./update.php" method="post">
+                                <input type="hidden" name="ProductId" id="ProductId" value="<?= $product['ProductId'] ?>">
                                 <button type="submit" class="btn btn-outline-success  mb-2">
                                     Update
                                 </button>
                             </form>
                             <button type="button" class="btn btn-outline-danger  mb-2"
-                                onclick="deleteProducts(<?= $product['ProductId'] ?>)">
+                                onclick="deleteData(<?= $product['ProductId'] ?>)">
                                 Delete
                             </button>
                             </div>
@@ -43,6 +43,28 @@
                 </div>
                 </div>
               </div>
+
+              <script>
+      function deleteData(Id) {
+        if(confirm("Are you sure you want to delete this Product ?")) {
+            $.ajax({
+                url: '../../api/products/delete.php',
+                type: 'POST',
+                data: {
+                    Id: Id
+                },
+                success: function(response) {
+                  if(response == response.success) {
+                    alert("Product deleted successfully");
+                    location.reload();
+                  } else {
+                    alert("Product not deleted");
+                  }
+                }
+            });
+        }
+      }
+    </script>
 <?php
     include pathOf('includes/scripts.php');
 ?>

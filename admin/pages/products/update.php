@@ -1,5 +1,10 @@
 <?php
     require '../../includes/init.php';
+
+    $Id = $_POST['ProductId'];
+    $products =  selectOne("SELECT * FROM products WHERE ProductId = '$Id'");
+    $categories = select("SELECT * FROM categories");
+
     include pathOf('includes/header.php');
     include pathOf('includes/navbar.php');
     include pathOf('includes/sidebar.php');
@@ -16,37 +21,36 @@
                                     <h5 class="card-title">Insert Products</h5>
                                     <label for="exampleInputEmail1" class="form-label">Category</label>
                                     <div class="mb-3">
-                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
+                                        <select class="form-select" id="CategoryId" >
+                                            <?php foreach($categories as $category): ?>
+                                                <option value="<?= $category['CategoryId'] ?>"> <?= $category['Name'] ?> </option>
+                                            <?php endforeach;?>
                                         </select>
                                       </div>
                                         <div class="mb-3">
                                           <label  class="form-label">Name</label>
-                                          <input type="text" class="form-control" id="Name" name="Name" autofocus>
+                                          <input type="text" class="form-control" id="Name" name="Name" value="<?= $products['Name'] ?>" autofocus>
                                         </div>
                                         <div class="mb-3">
                                           <label  class="form-label">Description</label>
-                                          <input type="text" class="form-control" id="Description" name="Description" autofocus>
+                                          <input type="text" class="form-control" id="Description" name="Description" value="<?= $products['Description'] ?>">
                                         </div>
                                         <div class="mb-3">
                                           <label  class="form-label">Price</label>
-                                          <input type="number" class="form-control" id="Price" name="Price" autofocus>
+                                          <input type="number" class="form-control" id="Price" name="Price" value="<?= $products['Price'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Main Image</label>
-                                            <input class="form-control" type="file" id="formFile">
+                                            <input class="form-control" type="file" id="Image" value="<?= $products['ImageFileName'] ?>">
                                         </div>
-                                        <div class="mb-3">
+                                        <!-- <div class="mb-3">
                                             <label for="formFile" class="form-label">Second Image</label>
                                             <input class="form-control" type="file" id="formFile">
                                         </div>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Third Image</label>
                                             <input class="form-control" type="file" id="formFile">
-                                        </div>
-                                        
+                                        </div> -->
                                         <button type="submit" class="btn btn-outline-success" onclick="insertData()">Submit</button>
                                 </div>
                                 
@@ -62,20 +66,24 @@
 ?>
 <script>
     function insertData() {
-        var Name = $('#Name').val();
+        var form = new FormData();
+        form.append('CategoryId', $('#CategoryId').val());
+        form.append('Name', $('#Name').val());
+        form.append('Description', $('#Description').val());
+        form.append('Price', $('#Price').val());
+        form.append('Image', $('#Image')[0].files[0]);
 
         $.ajax({
-            url: '../../api/roles/insert.php',
-            type: 'POST',
-            data: {
-                Name: Name
-            },
-            success: function(response) {
-                console.log(response.success);
-                alert("Role Added");
+            url: '../../api/products/insert.php',
+            method: 'POST',
+            data: form,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                alert("Product Added");
                 window.location.href = './index.php';
             }
-        });
+        })
     }
 </script>
 <?php
