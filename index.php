@@ -799,98 +799,18 @@
                                                 <div class="elementor-widget-container">
                                                     <div
                                                         class="qodef-shortcode qodef-m  qodef-reservation-form qodef-layout--block">
-                                                        <form class="qodef-m-inner" target="_blank"
-                                                            action="https://www.opentable.com/restref/client/">
-                                                            <input type="hidden" name="rid" class="rid" value="1">
-                                                            <input type="hidden" name="restref" class="restref"
-                                                                value="1">
                                                             <div class="qodef-m-field qodef-m-field-people">
-                                                                <select name="partysize" class="qodef-m-people">
-                                                                    <option value="1">1 Person</option>
-                                                                    <option value="2">2 People</option>
-                                                                    <option value="3">3 People</option>
-                                                                    <option value="4">4 People</option>
-                                                                    <option value="5">5 People</option>
-                                                                    <option value="6">6 People</option>
-                                                                    <option value="7">7 People</option>
-                                                                    <option value="8">8 People</option>
-                                                                    <option value="9">9 People</option>
-                                                                    <option value="10">10 People</option>
-                                                                </select>
+                                                            <input type="text" placeholder="Enter Persons" class="qodef-m-date" name="TotalPerson" id="TotalPerson">
                                                             </div>
                                                             <div class="qodef-m-field qodef-m-field-date">
-                                                                <input type="text" value="13/09/2023"
-                                                                    class="qodef-m-date" name="date">
-                                                                <svg class="qodef-svg--angle-down qodef-m-icon-arrow qodef-m-date-toggle"
-                                                                    xmlns="http://www.w3.org/2000/svg" width="10.121"
-                                                                    height="5.811" viewBox="0 0 10.121 5.811">
-                                                                    <path fill="none" stroke="currentColor"
-                                                                        stroke-linecap="square" stroke-linejoin="round"
-                                                                        stroke-width="1.5" d="m1.061 1.061 4 4 4-4" />
-                                                                </svg>
-                                                            </div>
-                                                            <div class="qodef-m-field qodef-m-field-time">
-                                                                <select name="time" class="qodef-m-time">
-                                                                    <option value="00:30">00:30 am</option>
-                                                                    <option value="01:00">01:00 am</option>
-                                                                    <option value="01:30">01:30 am</option>
-                                                                    <option value="02:00">02:00 am</option>
-                                                                    <option value="02:30">02:30 am</option>
-                                                                    <option value="03:00">03:00 am</option>
-                                                                    <option value="03:30">03:30 am</option>
-                                                                    <option value="04:00">04:00 am</option>
-                                                                    <option value="04:30">04:30 am</option>
-                                                                    <option value="05:00">05:00 am</option>
-                                                                    <option value="05:30">05:30 am</option>
-                                                                    <option value="06:00">06:00 am</option>
-                                                                    <option value="06:30">06:30 am</option>
-                                                                    <option value="07:00">07:00 am</option>
-                                                                    <option value="07:30">07:30 am</option>
-                                                                    <option value="08:00">08:00 am</option>
-                                                                    <option value="08:30">08:30 am</option>
-                                                                    <option value="09:00">09:00 am</option>
-                                                                    <option value="09:30">09:30 am</option>
-                                                                    <option value="10:00">10:00 am</option>
-                                                                    <option value="10:30">10:30 am</option>
-                                                                    <option value="11:00" selected>11:00 am</option>
-                                                                    <option value="11:30">11:30 am</option>
-                                                                    <option value="12:00">12:00 pm</option>
-                                                                    <option value="12:30">12:30 pm</option>
-                                                                    <option value="13:00">01:00 pm</option>
-                                                                    <option value="13:30">01:30 pm</option>
-                                                                    <option value="14:00">02:00 pm</option>
-                                                                    <option value="14:30">02:30 pm</option>
-                                                                    <option value="15:00">03:00 pm</option>
-                                                                    <option value="15:30">03:30 pm</option>
-                                                                    <option value="16:00">04:00 pm</option>
-                                                                    <option value="16:30">04:30 pm</option>
-                                                                    <option value="17:00">05:00 pm</option>
-                                                                    <option value="17:30">05:30 pm</option>
-                                                                    <option value="18:00">06:00 pm</option>
-                                                                    <option value="18:30">06:30 pm</option>
-                                                                    <option value="19:00">07:00 pm</option>
-                                                                    <option value="19:30">07:30 pm</option>
-                                                                    <option value="20:00">08:00 pm</option>
-                                                                    <option value="20:30">08:30 pm</option>
-                                                                    <option value="21:00">09:00 pm</option>
-                                                                    <option value="21:30">09:30 pm</option>
-                                                                    <option value="22:00">10:00 pm</option>
-                                                                    <option value="22:30">10:30 pm</option>
-                                                                    <option value="23:00">11:00 pm</option>
-                                                                    <option value="23:30">11:30 pm</option>
-                                                                    <option value="24:00">12:00 pm</option>
-                                                                </select>
+                                                                <input type="date" class="qodef-m-date" name="date">
                                                             </div>
                                                             <div class="qodef-m-field qodef-m-field-book">
-                                                                <button type="submit"
+                                                                <button type="submit" onclick="insertData()"
                                                                     class="qodef-shortcode qodef-m  qodef-button qodef-layout--outlined qodef-size--normal ">
                                                                     <span class="qodef-btn-text">Book
                                                                         now</span></button>
                                                             </div>
-                                                            <p class="qodef-m-copyright">*Powered by OpenTable</p>
-                                                            <input type="hidden" name="datetime" class="datetime"
-                                                                value />
-                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1344,5 +1264,25 @@
     </div>
     <?php
     include pathOf('includes/scripts.php');
+    ?>
+    <script>
+        function insertData() {
+            var TotalPerson = $('#TotalPerson').val();
+            var Date = $('#Date').val();
+
+            $.ajax({
+                url: 'admin/api/booking/insert.php',
+                type: 'POST',
+                data: {
+                    TotalPerson: TotalPerson,
+                    Date: Date
+                },
+                success: function(data) {
+                    alert(data);
+                }
+            });
+        }
+    </script>
+    <?php
     include pathOf('includes/footer.php');
 ?>
