@@ -18,7 +18,7 @@
                     <?php foreach ($products as $product) { ?>
                     <div class="col-sm-12 col-md-4">
                       <div class="card">
-                        <img src="<?= urlOf('assets/img/uploads/') . $product['ImageFileName'] ?>" class="card-img-top" >
+                        <img src="<?= urlOf('assets/images/uploads/') . $product['ImageFileName'] ?>" class="card-img-top" >
                         <div class="card-body">
                           <h5 class="card-title"><?= $product['Name'] ?></h5>
                           <p class="card-text"><?= $product['Description'] ?></p>
