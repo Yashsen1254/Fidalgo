@@ -24,8 +24,6 @@
                                             <th>Sr No.</th>
                                             <th>Total Person</th>
                                             <th>Date</th>
-                                            <th>Edit</th>
-                                            <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -34,15 +32,6 @@
                                             <td><?= $index += 1 ?></td>
                                             <td><?= $booking['TotalPerson'] ?></td>
                                             <td><?= $booking['Date'] ?></td>
-                                            <form action="./update.php" method="post">
-                                                <td>
-                                                    <input type="hidden" value="<?= $booking['BookingId'] ?>" id="BookingId" name="BookingId">
-                                                    <button type="submit" class="btn btn-outline-success">update</button>
-                                                </td>
-                                            </form>
-                                            <td>
-                                              <button type="button" class="btn btn-outline-danger" onclick="deleteData(<?= $booking['BookingId'] ?>)">Delete</button>
-                                            </td>
                                         </tr>
                                         <?php endforeach; ?>
                                     </tbody>
@@ -51,8 +40,6 @@
                                             <th>Sr No.</th>
                                             <th>Total Person</th>
                                             <th>Date</th>
-                                            <th>Edit</th>
-                                            <th>Delete</th>
                                         </tr>
                                     </tfoot>
                                 </table>
