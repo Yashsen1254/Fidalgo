@@ -803,7 +803,7 @@
                                                             <input type="text" placeholder="Enter Persons" class="qodef-m-date" name="TotalPerson" id="TotalPerson">
                                                             </div>
                                                             <div class="qodef-m-field qodef-m-field-date">
-                                                                <input type="date" class="qodef-m-date" name="date">
+                                                                <input type="date" class="qodef-m-date" name="date" id="Date">
                                                             </div>
                                                             <div class="qodef-m-field qodef-m-field-book">
                                                                 <button type="submit" onclick="insertData()"
@@ -1277,8 +1277,8 @@
                     TotalPerson: TotalPerson,
                     Date: Date
                 },
-                success: function(data) {
-                    alert(data);
+                success: function(response) {
+                    alert(Thanks For Booking !);
                 }
             });
         }
