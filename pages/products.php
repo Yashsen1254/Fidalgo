@@ -16,252 +16,37 @@
                 <div class="qodef-grid-inner">
                     <div id="qodef-woo-page"
                         class="qodef-grid-item qodef-page-content-section qodef-col--content qodef--list">
-                        <header class="woocommerce-products-header">
-                        </header>
-                        <div class="woocommerce-notices-wrapper"></div>
-                        <div class="qodef-woo-results">
-                            <p class="woocommerce-result-count">
-                                Showing 1&ndash;6 of 18 results</p>
-                        </div>
                         <div
                             class="qodef-woo-product-list qodef-item-layout--info-below qodef-gutter--no qodef-vertical-gutter--no qodef-item-border--yes qodef-item-title--letter-spacing">
                             <ul class="products columns-2">
+                                <?php foreach ($products as $product) { ?>
                                 <li
                                     class="product type-product post-342 status-publish first instock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail shipping-taxable purchasable product-type-simple">
                                     <div class="qodef-e-inner">
                                         <div class="qodef-e-content">
                                             <div class="qodef-e-top-holder">
                                                 <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Whiskey
-                                                        Cream</a></h5>
+                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><?= $product['Name'] ?></a></h5>
                                                 <span class="price"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>30.00</bdi></span></span>
+                                                                class="woocommerce-Price-currencySymbol">&#36;</span><?= $product['Price'] ?></bdi></span></span>
                                             </div><a href="" 
                                                 class="button product_type_simple"
-                                                >Add to cart</a>
+                                                >More Info</a>
                                         </div>
                                         <div class="qodef-e-media">
                                             <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/whiskey-cream/"
                                                     class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
                                                         width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img1-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img1-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img1-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img1-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img1-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/whiskey-cream/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                                        src="<?= urlOf('admin/assets/images/uploads/') . $product['ImageFileName'] ?>"
+                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div>
+                                                        <a href="https://fidalgo.qodeinteractive.com/product/whiskey-cream/"></a>
                                         </div>
                                         <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/whiskey-cream/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                            <p itemprop="description" class="qodef-woo-product-excerpt"><?= $product['Description'] ?></p>
+                                        </div>
                                     </div>
                                 </li>
-                                <li
-                                    class="new product type-product post-368 status-publish last instock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <div class="qodef-e-inner">
-                                        <div class="qodef-e-content">
-                                            <div class="qodef-e-top-holder">
-                                                <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        href="https://fidalgo.qodeinteractive.com/product/pecan-sandies/"
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Pecan
-                                                        Sandies</a></h5>
-                                                <span class="price"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>27.00</bdi></span></span>
-                                            </div><a href="?add-to-cart=368" data-quantity="1"
-                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                data-product_id="368" data-product_sku="2"
-                                                aria-label="Add to cart: &ldquo;Pecan Sandies&rdquo;" aria-describedby
-                                                rel="nofollow">Add to cart</a>
-                                        </div>
-                                        <div class="qodef-e-media">
-                                            <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/pecan-sandies/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><span
-                                                        class="qodef-woo-product-mark qodef-new">New</span><img
-                                                        width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img6-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img6-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img6-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img6-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img6-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/pecan-sandies/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                        </div>
-                                        <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/pecan-sandies/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                    </div>
-                                </li>
-                                <li
-                                    class="product type-product post-401 status-publish first instock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <div class="qodef-e-inner">
-                                        <div class="qodef-e-content">
-                                            <div class="qodef-e-top-holder">
-                                                <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        href="https://fidalgo.qodeinteractive.com/product/sweet-bite/"
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Sweet
-                                                        Bite</a></h5>
-                                                <span class="price"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></span>
-                                            </div><a href="?add-to-cart=401" data-quantity="1"
-                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                data-product_id="401" data-product_sku="3"
-                                                aria-label="Add to cart: &ldquo;Sweet Bite&rdquo;" aria-describedby
-                                                rel="nofollow">Add to cart</a>
-                                        </div>
-                                        <div class="qodef-e-media">
-                                            <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/sweet-bite/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                        width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img4-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img4-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img4-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img4-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img4-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/sweet-bite/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                        </div>
-                                        <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/sweet-bite/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                    </div>
-                                </li>
-                                <li
-                                    class="product type-product post-403 status-publish last outofstock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <div class="qodef-e-inner">
-                                        <div class="qodef-e-content">
-                                            <div class="qodef-e-top-holder">
-                                                <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        href="https://fidalgo.qodeinteractive.com/product/choco-creme/"
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Choco
-                                                        Creme</a></h5>
-                                                <span class="price"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>19.00</bdi></span></span>
-                                            </div><a href="https://fidalgo.qodeinteractive.com/product/choco-creme/"
-                                                data-quantity="1" class="button product_type_simple"
-                                                data-product_id="403" data-product_sku="4"
-                                                aria-label="Read more about &ldquo;Choco Creme&rdquo;" aria-describedby
-                                                rel="nofollow">Read more</a>
-                                        </div>
-                                        <div class="qodef-e-media">
-                                            <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/choco-creme/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><span
-                                                        class="qodef-woo-product-mark qodef-out-of-stock">Sold</span><img
-                                                        width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img3-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img3-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img3-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img3-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img3-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/choco-creme/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                        </div>
-                                        <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/choco-creme/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                    </div>
-                                </li>
-                                <li
-                                    class="product type-product post-411 status-publish first instock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
-                                    <div class="qodef-e-inner">
-                                        <div class="qodef-e-content">
-                                            <div class="qodef-e-top-holder">
-                                                <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        href="https://fidalgo.qodeinteractive.com/product/black-and-white/"
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Black
-                                                        And White</a></h5>
-                                                <span class="price"><del aria-hidden="true"><span
-                                                            class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>17.00</bdi></span></del>
-                                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>15.00</bdi></span></ins></span>
-                                            </div><a href="?add-to-cart=411" data-quantity="1"
-                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                data-product_id="411" data-product_sku="5"
-                                                aria-label="Add to cart: &ldquo;Black And White&rdquo;" aria-describedby
-                                                rel="nofollow">Add to cart</a>
-                                        </div>
-                                        <div class="qodef-e-media">
-                                            <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/black-and-white/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                                    <span class="qodef-woo-product-mark qodef-woo-onsale">Sale</span>
-                                                    <img width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img5-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img5-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img5-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img5-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img5-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/black-and-white/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                        </div>
-                                        <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/black-and-white/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                    </div>
-                                </li>
-                                <li
-                                    class="product type-product post-417 status-publish last instock product_cat-chocolate product_tag-caramel product_tag-chocolate has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <div class="qodef-e-inner">
-                                        <div class="qodef-e-content">
-                                            <div class="qodef-e-top-holder">
-                                                <h5 class="qodef-woo-product-title woocommerce-loop-product__title"><a
-                                                        href="https://fidalgo.qodeinteractive.com/product/caramel-nut/"
-                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Caramel
-                                                        &#038; Nut</a></h5>
-                                                <span class="price"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>21.00</bdi></span></span>
-                                            </div><a href="?add-to-cart=417" data-quantity="1"
-                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                data-product_id="417" data-product_sku="6"
-                                                aria-label="Add to cart: &ldquo;Caramel &amp; Nut&rdquo;"
-                                                aria-describedby rel="nofollow">Add to cart</a>
-                                        </div>
-                                        <div class="qodef-e-media">
-                                            <div class="qodef-e-media-image"><a
-                                                    href="https://fidalgo.qodeinteractive.com/product/caramel-nut/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                        width="300" height="300"
-                                                        src="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img2-300x300.png"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                        alt="a" decoding="async" loading="lazy"
-                                                        srcset="https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img2-300x300.png 300w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img2-150x150.png 150w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img2-650x650.png 650w, https://fidalgo.qodeinteractive.com/wp-content/uploads/2023/09/shop-single-img2-100x100.png 100w"
-                                                        sizes="(max-width: 300px) 100vw, 300px" /></a></div><a
-                                                href="https://fidalgo.qodeinteractive.com/product/caramel-nut/"
-                                                class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                        </div>
-                                        <div class="qodef-e-content-bottom">
-                                            <p itemprop="description" class="qodef-woo-product-excerpt">Morbi tempus
-                                                iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas
-                                                mae cenas est</p>
-                                        </div><a href="https://fidalgo.qodeinteractive.com/product/caramel-nut/"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
-                                    </div>
-                                </li>
+                                <?php } ?>
                             </ul>
                         </div>
                     </div>
