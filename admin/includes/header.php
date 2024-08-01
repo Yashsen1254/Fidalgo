@@ -19,5 +19,5 @@
         <link href="<?= urlOf('assets/plugins/apexcharts/apexcharts.css') ?>" rel="stylesheet">      
         <link href="<?= urlOf('assets/css/main.min.css') ?>" rel="stylesheet">
         <link href="<?= urlOf('assets/css/custom.css') ?>" rel="stylesheet">
-
-    </head>
+        <link href="<?= urlOf('assets/plugins/DataTables/datatables.min.css') ?>" rel="stylesheet">   
+    </head>`

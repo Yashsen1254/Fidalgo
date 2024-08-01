@@ -9,3 +9,5 @@
 <script src="<?= urlOf('assets/plugins/sparkline/jquery.sparkline.min.js') ?>"></script>
 <script src="<?= urlOf('assets/js/main.min.js') ?>"></script>
 <script src="<?= urlOf('assets/js/pages/dashboard.js') ?>"></script>
+<script src="<?= urlOf('assets/plugins/DataTables/datatables.min.js') ?>"></script>
+<script src="<?= urlOf('assets/js/pages/datatables.js') ?>"></script>
