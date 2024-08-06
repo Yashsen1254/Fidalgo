@@ -23,21 +23,19 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Register</h3>
-		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+		      			<input type="text" class="form-control" placeholder="Username" id="Username" name="Username" required>
 		      		</div>
                       <div class="form-group">
-		      			<input type="email" class="form-control" placeholder="Email" required>
+		      			<input type="email" class="form-control" placeholder="Email" id="Email" name="Email" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              <input  type="password" class="form-control" placeholder="Password" id="Password" name="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
+	            	<button type="submit" onclick="insertData()" class="form-control btn btn-primary submit px-3">Sign Up</button>
 	            </div>
-	          </form>
 		      </div>
 				</div>
 			</div>
@@ -48,7 +46,28 @@
   <script src="<?= urlOf('assets/js/popper.js') ?>"></script>
   <script src="<?= urlOf('assets/js/bootstrap.min.js') ?>"></script>
   <script src="<?= urlOf('assets/js/main.js') ?>"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		function insertData() {
+			var Username = $("#Username").val();
+			var Email = $("#Email").val();
+			var Password = $("#Password").val();
 
+			$.ajax({
+				url: "../admin/api/register.php",
+				type: "POST",
+				data: {
+					Username: Username,
+					Email: Email,
+					Password: Password
+				},
+				success: function(response) {
+					console.log(response.success);
+                	alert("Registered Succesfully");
+				}
+			});
+		}
+	</script>
 	</body>
 </html>
 
