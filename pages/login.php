@@ -23,18 +23,16 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Log In</h3>
-		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+		      			<input type="text" class="form-control" placeholder="Username" id="Username" name="Username" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              <input type="password" class="form-control" placeholder="Password" id="Password" name="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+	            	<button type="submit" class="form-control btn btn-primary submit px-3" onclick="sendData()">Sign In</button>
 	            </div>
-	          </form>
 		      </div>
 				</div>
 			</div>
@@ -45,7 +43,23 @@
   <script src="<?= urlOf('assets/js/popper.js') ?>"></script>
   <script src="<?= urlOf('assets/js/bootstrap.min.js') ?>"></script>
   <script src="<?= urlOf('assets/js/main.js') ?>"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    function sendData() {
+        var data = {
+            Username: $('#Username').val(),
+            Password: $('#Password').val()
+        }
 
+        $.post('../admin/api/login.php', data, function (response) {
+            console.log(response);
+            if (response.success !== true)
+                return;
+
+			window.location.href = '../index.php';
+        });
+    }
+</script>
 	</body>
 </html>
 
