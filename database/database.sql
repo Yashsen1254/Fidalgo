@@ -13,11 +13,9 @@ CREATE TABLE Roles (
 -- Table for users
 CREATE TABLE Users (
     `UserId` INT AUTO_INCREMENT PRIMARY KEY,
-    `RoleId` INT NOT NULL,
-    `Username` VARCHAR(255) NOT NULL UNIQUE,
+    `Username` VARCHAR(255) NOT NULL,
     `Password` VARCHAR(255) NOT NULL,
-    `Email` VARCHAR(255) NOT NULL UNIQUE,
-    FOREIGN KEY (RoleId) REFERENCES Roles(RoleId)
+    `Email` VARCHAR(255) NOT NULL
 );
 
 -- Table for categories
@@ -26,7 +24,7 @@ CREATE TABLE Categories (
     `Name` VARCHAR(255) NOT NULL
 );
 
--- Table for products
+-- Table for prod1ucts
 CREATE TABLE Products (
     `ProductId` INT AUTO_INCREMENT PRIMARY KEY,
     `CategoryId` INT NOT NULL,
@@ -41,8 +39,7 @@ CREATE TABLE Products (
 CREATE TABLE Booking (
     `BookingId` INT AUTO_INCREMENT PRIMARY KEY,
     `TotalPerson` INT NOT NULL,
-    `Date` DATE NOT NULL,
-    `Time` TIME NOT NULL
+    `Date` DATE NOT NULL
 );
 
 -- Table for orders
