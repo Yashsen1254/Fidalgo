@@ -1,3 +1,4 @@
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="https://fidalgo.qodeinteractive.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.20"></script>
 <script type="text/javascript" src="https://fidalgo.qodeinteractive.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.20" ></script>
 <script type="text/javascript" src="https://fidalgo.qodeinteractive.com/wp-content/plugins/fidalgo-core/assets/plugins/gsap/gsap.min.js?ver=6.6" ></script>
