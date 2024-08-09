@@ -31,7 +31,7 @@
                                                                 class="woocommerce-Price-currencySymbol">&#36;</span><?= $product['Price'] ?></bdi></span></span>
                                             </div><a href="" 
                                                 class="button product_type_simple"
-                                                >More Info</a>
+                                                >Add To Cart</a>
                                         </div>
                                         <div class="qodef-e-media">
                                             <div class="qodef-e-media-image"><a
