@@ -1278,7 +1278,7 @@
                     Date: Date
                 },
                 success: function(response) {
-                    alert(Thanks For Booking !);
+                    alert('Thanks For Booking!');
                 }
             });
         }

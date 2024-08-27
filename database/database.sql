@@ -94,5 +94,5 @@ CREATE TABLE Feedbacks (
     `FeedbackId` INT AUTO_INCREMENT PRIMARY KEY,
     `Name` INT NOT NULL,
     `Rating` INT NOT NULL,
-    `Comment` VARCHAR(255) NOT NULL,
+    `Comment` VARCHAR(255) NOT NULL
 );
