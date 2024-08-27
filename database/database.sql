@@ -89,6 +89,17 @@ CREATE TABLE Cart (
     FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
 );
 
+CREATE TABLE Checkout (
+    `CheckoutId` INT AUTO_INCREMENT PRIMARY KEY,
+    `FirstName` VARCHAR(255) NOT NULL,
+    `LastName` VARCHAR(255) NOT NULL,
+    `Address` VARCHAR(255) NOT NULL,
+    `City` VARCHAR(255) NOT NULL,
+    `ZipCode` VARCHAR(255) NOT NULL,
+    `Phone` VARCHAR(255) NOT NULL,
+    `Email` VARCHAR(255) NOT NULL
+);
+
 -- Table for feedbacks
 CREATE TABLE Feedbacks (
     `FeedbackId` INT AUTO_INCREMENT PRIMARY KEY,
